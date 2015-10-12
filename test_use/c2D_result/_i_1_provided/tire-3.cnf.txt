@@ -1,0 +1,28 @@
+
+Constructing CNF... DONE
+CNF stats: 
+  Vars=577 / Clauses=2004
+  CNF Time	0.004s
+Constructing vtree (from incidence graph)... DONE
+Vtree stats:
+  Vtree widths: con<=50, c_con=400 v_con=50
+  Vtree Time	0.301s
+Compiling... DONE
+  NNF memory      	1.2 MB
+  Learned clauses      	69
+Cache stats:
+  hit rate   	75.7%
+  lookups    	8966
+  ent count  	1490
+  ent memory 	118.3 KB
+  ht  memory 	152.6 MB
+  clists     	1.0 ave, 2 max
+  keys       	33.3b ave, 91.0b max, 1.0b min
+  Compile Time	0.132s
+Saving compiled NNF to file... DONE
+  Save Time       	0.027s
+NNF stats:
+  Nodes           	26040
+  Edges           	50522
+Total Time: 0.581s
+

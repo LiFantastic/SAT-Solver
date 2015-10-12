@@ -1,0 +1,15 @@
+Result from my own executable file:
+
+
+Constructing CNF... DONE
+CNF stats: 
+  Vars=1790 / Clauses=18026
+  CNF Time	0.016s
+Constructing vtree (from primal graph)...Result from provided executable file:
+
+
+Constructing CNF... DONE
+CNF stats: 
+  Vars=1790 / Clauses=18026
+  CNF Time	0.028s
+Constructing vtree (from primal graph)...Cannot open dtree file: htree_15174.tmp

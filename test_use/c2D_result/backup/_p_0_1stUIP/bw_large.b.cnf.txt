@@ -1,0 +1,78 @@
+Result from my own executable file:
+
+
+Constructing CNF... DONE
+CNF stats: 
+  Vars=1087 / Clauses=13772
+  CNF Time	0.014s
+Constructing vtree (from primal graph)... DONE
+Vtree stats:
+  Vtree widths: con<=279, c_con=2324 v_con=279
+  Vtree Time	10.619s
+Compiling... DONE
+  NNF memory      	126.8 KB
+  Learned clauses      	13067914
+Cache stats:
+  hit rate   	0.0%
+  lookups    	13557842
+  ent count  	1
+  ent memory 	0.3 KB
+  ht  memory 	152.6 MB
+  clists     	1.0 ave, 1 max
+  keys       	240.0b ave, 240.0b max, 240.0b min
+  Compile Time	721.945s
+Saving compiled NNF to file... DONE
+  Save Time       	0.002s
+NNF stats:
+  Nodes           	2674
+  Edges           	3136
+Post compilation
+  Loading NNF from file... DONE
+  Load Time       	0.002s
+NNF stats:
+  Nodes           	2674
+  Edges           	3136
+  Counting... 2 models / 0.002s
+  Checking decomposability... OK / 0.001s
+  Checking entailment... OK / 0.514s
+Total Time: 733.115s
+
+Result from provided executable file:
+
+
+Constructing CNF... DONE
+CNF stats: 
+  Vars=1087 / Clauses=13772
+  CNF Time	0.014s
+Constructing vtree (from primal graph)... DONE
+Vtree stats:
+  Vtree widths: con<=262, c_con=2562 v_con=262
+  Vtree Time	11.500s
+Compiling... DONE
+  NNF memory      	172.1 KB
+  Learned clauses      	7967
+Cache stats:
+  hit rate   	0.0%
+  lookups    	13170
+  ent count  	2
+  ent memory 	0.5 KB
+  ht  memory 	152.6 MB
+  clists     	1.0 ave, 1 max
+  keys       	216.0b ave, 216.0b max, 216.0b min
+  Compile Time	0.929s
+Saving compiled NNF to file... DONE
+  Save Time       	0.001s
+NNF stats:
+  Nodes           	2648
+  Edges           	3084
+Post compilation
+  Loading NNF from file... DONE
+  Load Time       	0.002s
+NNF stats:
+  Nodes           	2648
+  Edges           	3084
+  Counting... 2 models / 0.002s
+  Checking decomposability... OK / 0.001s
+  Checking entailment... OK / 0.474s
+Total Time: 12.991s
+

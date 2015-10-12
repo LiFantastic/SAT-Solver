@@ -1,0 +1,79 @@
+Result from my own executable file:
+
+
+Constructing CNF... DONE
+CNF stats: 
+  Vars=1815 / Clauses=4797
+  CNF Time	0.005s
+Constructing vtree (from primal graph)...Wrong cut! 2 1
+ DONE
+Vtree stats:
+  Vtree widths: con<=135, c_con=1883 v_con=190
+  Vtree Time	1.849s
+Compiling... DONE
+  NNF memory      	49.2 MB
+  Learned clauses      	1023
+Cache stats:
+  hit rate   	94.7%
+  lookups    	18677290
+  ent count  	99360
+  ent memory 	32.6 MB
+  ht  memory 	152.6 MB
+  clists     	1.0 ave, 2 max
+  keys       	296.3b ave, 375.0b max, 1.0b min
+  Compile Time	28.398s
+Saving compiled NNF to file... DONE
+  Save Time       	0.589s
+NNF stats:
+  Nodes           	1074511
+  Edges           	2145006
+Post compilation
+  Loading NNF from file... DONE
+  Load Time       	0.698s
+NNF stats:
+  Nodes           	1074511
+  Edges           	2145006
+  Counting... 296769065231361857282123600509092812201607557801150499309334680332980133905421096550034893230462958416652580813900855949566793596912942448640 models / 1.075s
+  Checking decomposability... OK / 0.475s
+  Checking entailment... OK / 77.743s
+Total Time: 110.880s
+
+Result from provided executable file:
+
+
+Constructing CNF... DONE
+CNF stats: 
+  Vars=1815 / Clauses=4797
+  CNF Time	0.007s
+Constructing vtree (from primal graph)... DONE
+Vtree stats:
+  Vtree widths: con<=134, c_con=2320 v_con=190
+  Vtree Time	2.754s
+Compiling... DONE
+  NNF memory      	218.6 MB
+  Learned clauses      	23
+Cache stats:
+  hit rate   	78.7%
+  lookups    	5631424
+  ent count  	922514
+  ent memory 	318.1 MB
+  ht  memory 	152.6 MB
+  clists     	1.0 ave, 4 max
+  keys       	313.5b ave, 484.0b max, 1.0b min
+  Compile Time	43.501s
+Saving compiled NNF to file... DONE
+  Save Time       	2.699s
+NNF stats:
+  Nodes           	4774613
+  Edges           	9545220
+Post compilation
+  Loading NNF from file... DONE
+  Load Time       	3.153s
+NNF stats:
+  Nodes           	4774613
+  Edges           	9545220
+  Counting... 296769065231361857282123600509092812201607557801150499309334680332980133905421096550034893230462958416652580813900855949566793596912942448640 models / 4.855s
+  Checking decomposability... OK / 2.128s
+  Checking entailment... OK / 352.283s
+Total Time: 411.505s
+

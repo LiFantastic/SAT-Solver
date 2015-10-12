@@ -1,0 +1,78 @@
+Result from my own executable file:
+
+
+Constructing CNF... DONE
+CNF stats: 
+  Vars=1635 / Clauses=3662
+  CNF Time	0.002s
+Constructing vtree (from primal graph)... DONE
+Vtree stats:
+  Vtree widths: con<=39, c_con=1083 v_con=39
+  Vtree Time	0.520s
+Compiling... DONE
+  NNF memory      	1.7 MB
+  Learned clauses      	9
+Cache stats:
+  hit rate   	76.4%
+  lookups    	37420
+  ent count  	4199
+  ent memory 	628.8 KB
+  ht  memory 	152.6 MB
+  clists     	1.0 ave, 1 max
+  keys       	105.4b ave, 221.0b max, 1.0b min
+  Compile Time	0.124s
+Saving compiled NNF to file... DONE
+  Save Time       	0.018s
+NNF stats:
+  Nodes           	36323
+  Edges           	69266
+Post compilation
+  Loading NNF from file... DONE
+  Load Time       	0.027s
+NNF stats:
+  Nodes           	36323
+  Edges           	69266
+  Counting... 13762971811969386785872966835451223602449242343997055595165673062400 models / 0.033s
+  Checking decomposability... OK / 0.018s
+  Checking entailment... OK / 1.875s
+Total Time: 2.688s
+
+Result from provided executable file:
+
+
+Constructing CNF... DONE
+CNF stats: 
+  Vars=1635 / Clauses=3662
+  CNF Time	0.004s
+Constructing vtree (from primal graph)... DONE
+Vtree stats:
+  Vtree widths: con<=40, c_con=1137 v_con=40
+  Vtree Time	0.691s
+Compiling... DONE
+  NNF memory      	1.7 MB
+  Learned clauses      	11
+Cache stats:
+  hit rate   	75.4%
+  lookups    	30820
+  ent count  	5489
+  ent memory 	742.3 KB
+  ht  memory 	152.6 MB
+  clists     	1.0 ave, 1 max
+  keys       	90.5b ave, 259.0b max, 1.0b min
+  Compile Time	0.150s
+Saving compiled NNF to file... DONE
+  Save Time       	0.021s
+NNF stats:
+  Nodes           	38004
+  Edges           	72630
+Post compilation
+  Loading NNF from file... DONE
+  Load Time       	0.025s
+NNF stats:
+  Nodes           	38004
+  Edges           	72630
+  Counting... 13762971811969386785872966835451223602449242343997055595165673062400 models / 0.031s
+  Checking decomposability... OK / 0.018s
+  Checking entailment... OK / 1.855s
+Total Time: 2.872s
+

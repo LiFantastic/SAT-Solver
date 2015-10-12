@@ -1,0 +1,1476 @@
+
+Constructing CNF...
+SatState constructed!
+
+============== Clauses ==============
+C 1   :			+7  			+5  			+2  			
+C 2   :			+8  			+7  			+3  			
+C 3   :			+2  			-1  			-7  			
+C 4   :			+9  			+1  			-4  			
+C 5   :			-8  			+6  			+5  			
+C 6   :			-9  			+6  			+2  			
+C 7   :			-2  			-10 			-1  			
+C 8   :			+6  			-9  			+5  			
+C 9   :			-3  			+1  			+6  			
+C 10  :			-7  			+10 			+1  			
+C 11  :			+6  			+1  			-2  			
+C 12  :			+2  			+3  			+1  			
+C 13  :			-10 			-2  			+3  			
+C 14  :			-6  			+2  			-1  			
+C 15  :			-3  			-9  			+1  			
+C 16  :			-1  			+7  			-9  			
+C 17  :			+5  			+10 			+4  			
+C 18  :			-9  			+3  			+2  			
+C 19  :			-9  			-3  			+2  			
+C 20  :			-7  			-5  			-3  			
+C 21  :			+5  			-9  			+8  			
+C 22  :			-3  			-8  			-9  			
+C 23  :			+6  			-10 			-1  			
+C 24  :			-7  			+8  			+1  			
+C 25  :			-1  			-10 			+3  			
+C 26  :			-7  			+4  			+2  			
+C 27  :			+3  			-7  			-8  			
+C 28  :			-6  			+5  			+1  			
+C 29  :			+5  			-9  			+6  			
+C 30  :			+7  			-4  			-5  			
+C 31  :			+7  			+10 			-1  			
+C 32  :			+8  			-4  			+3  			
+C 33  :			-2  			+3  			+1  			
+C 34  :			-6  			+4  			-10 			
+C 35  :			+5  			+1  			+2  			
+C 36  :			-3  			+4  			-9  			
+C 37  :			-1  			-5  			+6  			
+C 38  :			-5  			+6  			-8  			
+C 39  :			+10 			-7  			-5  			
+C 40  :			-5  			-7  			-8  			
+C 41  :			-5  			+8  			-4  			
+C 42  :			+1  			-10 			+9  			
+============== Variables ==============
++1  :		   4		   9		  10		  11		  12		  15		  24		  28		  33		  35		  42		
+-1  :		   3		   7		  14		  16		  23		  25		  31		  37		
+------------------------------------
++2  :		   1		   3		   6		  12		  14		  18		  19		  26		  35		
+-2  :		   7		  11		  13		  33		
+------------------------------------
++3  :		   2		  12		  13		  18		  25		  27		  32		  33		
+-3  :		   9		  15		  19		  20		  22		  36		
+------------------------------------
++4  :		  17		  26		  34		  36		
+-4  :		   4		  30		  32		  41		
+------------------------------------
++5  :		   1		   5		   8		  17		  21		  28		  29		  35		
+-5  :		  20		  30		  37		  38		  39		  40		  41		
+------------------------------------
++6  :		   5		   6		   8		   9		  11		  23		  29		  37		  38		
+-6  :		  14		  28		  34		
+------------------------------------
++7  :		   1		   2		  16		  30		  31		
+-7  :		   3		  10		  20		  24		  26		  27		  39		  40		
+------------------------------------
++8  :		   2		  21		  24		  32		  41		
+-8  :		   5		  22		  27		  38		  40		
+------------------------------------
++9  :		   4		  42		
+-9  :		   6		   8		  15		  16		  18		  19		  21		  22		  29		  36		
+------------------------------------
++10 :		  10		  17		  31		  39		
+-10 :		   7		  13		  23		  25		  34		  42		
+------------------------------------
+ DONE
+CNF stats: 
+  Vars=10 / Clauses=42
+  CNF Time	0.000s
+Constructing vtree (from primal graph)... DONE
+Vtree stats:
+  Vtree widths: con<=8, c_con=32 v_con=8
+  Vtree Time	0.002s
+Compiling...Start of level 1   , already instantiated:	
+-------------------------------------
+Start of level 2   , already instantiated:	
+-------------------------------------
+1, 0
+Literal +3   is set at level 2, VarName: 3 
+Reason for +3   ------->   Decision or Unit clause at level 1
+------------------------------------
+C 9   	FreeLit		2
+C 15  	FreeLit		2
+C 19  	FreeLit		2
+C 20  	FreeLit		2
+C 22  	FreeLit		2
+C 36  	FreeLit		2
+------------------------------------
+Start of level 3   , already instantiated:	+3  	
+-------------------------------------
+1, 0
+Literal +9   is set at level 3, VarName: 9 
+Reason for +9   ------->   Decision or Unit clause at level 1
+------------------------------------
+C 6   	FreeLit		2
+C 8   	FreeLit		2
+C 15  	FreeLit		1
+Lit +1   is put into the resolution list
+C 16  	FreeLit		2
+C 18  	FreeLit		2 -- Subsumed --
+C 19  	FreeLit		1
+Lit +2   is put into the resolution list
+C 21  	FreeLit		2
+C 22  	FreeLit		1
+Lit -8   is put into the resolution list
+C 29  	FreeLit		2
+C 36  	FreeLit		1
+Lit +4   is put into the resolution list
+------------------------------------
+5, 1
+Literal +1   is set at level 3, VarName: 1 
+Reason for +1   ------->   C 15  :			-3  			-9  			+1  			
+------------------------------------
+C 3   	FreeLit		2
+C 7   	FreeLit		2
+C 14  	FreeLit		2
+C 16  	FreeLit		1
+Lit +7   is put into the resolution list
+C 23  	FreeLit		2
+C 25  	FreeLit		2 -- Subsumed --
+C 31  	FreeLit		2
+C 37  	FreeLit		2
+------------------------------------
+6, 2
+Literal +2   is set at level 3, VarName: 2 
+Reason for +2   ------->   C 19  :			-9  			-3  			+2  			
+------------------------------------
+C 7   	FreeLit		1
+Lit -10  is put into the resolution list
+C 11  	FreeLit		2 -- Subsumed --
+C 13  	FreeLit		2 -- Subsumed --
+C 33  	FreeLit		2 -- Subsumed --
+------------------------------------
+7, 3
+Literal -8   is set at level 3, VarName: 8 
+Reason for -8   ------->   C 22  :			-3  			-8  			-9  			
+------------------------------------
+C 2   	FreeLit		2 -- Subsumed --
+C 21  	FreeLit		1
+Lit +5   is put into the resolution list
+C 24  	FreeLit		2 -- Subsumed --
+C 32  	FreeLit		2 -- Subsumed --
+C 41  	FreeLit		2
+------------------------------------
+8, 4
+Literal +4   is set at level 3, VarName: 4 
+Reason for +4   ------->   C 36  :			-3  			+4  			-9  			
+------------------------------------
+C 4   	FreeLit		2 -- Subsumed --
+C 30  	FreeLit		2
+C 32  	FreeLit		1 -- Subsumed --
+C 41  	FreeLit		1
+Lit -5   is put into the resolution list
+------------------------------------
+9, 5
+Literal +7   is set at level 3, VarName: 7 
+Reason for +7   ------->   C 16  :			-1  			+7  			-9  			
+------------------------------------
+C 3   	FreeLit		1 -- Subsumed --
+C 10  	FreeLit		2 -- Subsumed --
+C 20  	FreeLit		1
+Lit -5   is discard due to redundant occurrence (0)
+C 24  	FreeLit		1 -- Subsumed --
+C 26  	FreeLit		2 -- Subsumed --
+C 27  	FreeLit		2 -- Subsumed --
+C 39  	FreeLit		2
+C 40  	FreeLit		2 -- Subsumed --
+------------------------------------
+9, 6
+Literal -10  is set at level 3, VarName: 10 
+Reason for -10  ------->   C 7   :			-2  			-10 			-1  			
+------------------------------------
+C 10  	FreeLit		1 -- Subsumed --
+C 17  	FreeLit		2 -- Subsumed --
+C 31  	FreeLit		1 -- Subsumed --
+C 39  	FreeLit		1
+Lit -5   is discard due to redundant occurrence (0)
+------------------------------------
+9, 7
+Literal +5   is set at level 3, VarName: 5 
+Reason for +5   ------->   C 21  :			+5  			-9  			+8  			
+------------------------------------
+C 20  	FreeLit		0
+~~~~~~~~~~~~~~ Conflict ~~~~~~~~~~~~~~
+C 20  :			-7  			-5  			-3  			
+3	
+5	-8	9	
+3	
+9	Search tree pruned here.
+7	9	Search tree pruned here.
+1	9	Search tree pruned here.
+3	
+~~~~~~~~~~~~~~ Learned ~~~~~~~~~~~~~~
+C 43  :			-3  			-9  			
+Assertion Level:    2
+------------------------------------
+C 30  	FreeLit		1 -- Subsumed --
+Already conflict
+C 37  	FreeLit		1
+Already conflict
+C 38  	FreeLit		2 -- Subsumed --
+Already conflict
+C 39  	FreeLit		0
+Already conflict
+C 40  	FreeLit		1 -- Subsumed --
+Already conflict
+C 41  	FreeLit		0
+Already conflict
+------------------------------------
+Before Level 3
+Var: 1		+1		
+Var: 2		+2		
+Var: 3		+3		
+Var: 4		+4		
+Var: 5		+5		
+Var: 6		
+Var: 7		+7		
+Var: 8		-8		
+Var: 9		+9		
+Var: 10		-10		
+After Level 3
+Var: 1		
+Var: 2		
+Var: 3		+3		
+Var: 4		
+Var: 5		
+Var: 6		
+Var: 7		
+Var: 8		
+Var: 9		
+Var: 10		
+Start of level 2   , already instantiated:	+3  	
+-------------------------------------
+1, 0
+Literal -9   is set at level 2, VarName: 9 
+Reason for -9   ------->   C 43  :			-3  			-9  			
+------------------------------------
+C 4   	FreeLit		2
+C 42  	FreeLit		2
+------------------------------------
+Start of level 3   , already instantiated:	+3  	-9  	
+-------------------------------------
+1, 0
+Literal +2   is set at level 3, VarName: 2 
+Reason for +2   ------->   Decision or Unit clause at level 1
+------------------------------------
+C 7   	FreeLit		2
+C 11  	FreeLit		2
+C 13  	FreeLit		2 -- Subsumed --
+C 33  	FreeLit		2 -- Subsumed --
+------------------------------------
+Start of level 4   , already instantiated:	+3  	-9  	+2  	
+-------------------------------------
+1, 0
+Literal +1   is set at level 4, VarName: 1 
+Reason for +1   ------->   Decision or Unit clause at level 1
+------------------------------------
+C 3   	FreeLit		2 -- Subsumed --
+C 7   	FreeLit		1
+Lit -10  is put into the resolution list
+C 14  	FreeLit		2 -- Subsumed --
+C 16  	FreeLit		2 -- Subsumed --
+C 23  	FreeLit		2
+C 25  	FreeLit		2 -- Subsumed --
+C 31  	FreeLit		2
+C 37  	FreeLit		2
+------------------------------------
+2, 1
+Literal -10  is set at level 4, VarName: 10 
+Reason for -10  ------->   C 7   :			-2  			-10 			-1  			
+------------------------------------
+C 10  	FreeLit		2 -- Subsumed --
+C 17  	FreeLit		2
+C 31  	FreeLit		1
+Lit +7   is put into the resolution list
+C 39  	FreeLit		2
+------------------------------------
+3, 2
+Literal +7   is set at level 4, VarName: 7 
+Reason for +7   ------->   C 31  :			+7  			+10 			-1  			
+------------------------------------
+C 3   	FreeLit		1 -- Subsumed --
+C 10  	FreeLit		1 -- Subsumed --
+C 20  	FreeLit		1
+Lit -5   is put into the resolution list
+C 24  	FreeLit		2 -- Subsumed --
+C 26  	FreeLit		2 -- Subsumed --
+C 27  	FreeLit		2 -- Subsumed --
+C 39  	FreeLit		1
+Lit -5   is discard due to redundant occurrence (0)
+C 40  	FreeLit		2
+------------------------------------
+4, 3
+Literal -5   is set at level 4, VarName: 5 
+Reason for -5   ------->   C 20  :			-7  			-5  			-3  			
+------------------------------------
+C 1   	FreeLit		2 -- Subsumed --
+C 5   	FreeLit		2
+C 8   	FreeLit		2 -- Subsumed --
+C 17  	FreeLit		1
+Lit +4   is put into the resolution list
+C 21  	FreeLit		2 -- Subsumed --
+C 28  	FreeLit		2 -- Subsumed --
+C 29  	FreeLit		2 -- Subsumed --
+C 35  	FreeLit		2 -- Subsumed --
+------------------------------------
+5, 4
+Literal +4   is set at level 4, VarName: 4 
+Reason for +4   ------->   C 17  :			+5  			+10 			+4  			
+------------------------------------
+C 4   	FreeLit		1 -- Subsumed --
+C 30  	FreeLit		2 -- Subsumed --
+C 32  	FreeLit		2 -- Subsumed --
+C 41  	FreeLit		2 -- Subsumed --
+------------------------------------
+Start of level 5   , already instantiated:	+3  	-9  	+2  	+1  	-10 	+7  	-5  	+4  	
+-------------------------------------
+1, 0
+Literal +6   is set at level 5, VarName: 6 
+Reason for +6   ------->   Decision or Unit clause at level 1
+------------------------------------
+C 14  	FreeLit		1 -- Subsumed --
+C 28  	FreeLit		1 -- Subsumed --
+C 34  	FreeLit		2 -- Subsumed --
+------------------------------------
+Before Level 5
+Var: 1		+1		
+Var: 2		+2		
+Var: 3		+3		
+Var: 4		+4		
+Var: 5		-5		
+Var: 6		+6		
+Var: 7		+7		
+Var: 8		
+Var: 9		-9		
+Var: 10		-10		
+After Level 5
+Var: 1		+1		
+Var: 2		+2		
+Var: 3		+3		
+Var: 4		+4		
+Var: 5		-5		
+Var: 6		
+Var: 7		+7		
+Var: 8		
+Var: 9		-9		
+Var: 10		-10		
+Start of level 5   , already instantiated:	+3  	-9  	+2  	+1  	-10 	+7  	-5  	+4  	
+-------------------------------------
+1, 0
+Literal -6   is set at level 5, VarName: 6 
+Reason for -6   ------->   Decision or Unit clause at level 1
+------------------------------------
+C 5   	FreeLit		1
+Lit -8   is put into the resolution list
+C 6   	FreeLit		2 -- Subsumed --
+C 8   	FreeLit		1 -- Subsumed --
+C 9   	FreeLit		1 -- Subsumed --
+C 11  	FreeLit		1 -- Subsumed --
+C 23  	FreeLit		1 -- Subsumed --
+C 29  	FreeLit		1 -- Subsumed --
+C 37  	FreeLit		1 -- Subsumed --
+C 38  	FreeLit		2 -- Subsumed --
+------------------------------------
+2, 1
+Literal -8   is set at level 5, VarName: 8 
+Reason for -8   ------->   C 5   :			-8  			+6  			+5  			
+------------------------------------
+C 2   	FreeLit		2 -- Subsumed --
+C 21  	FreeLit		1 -- Subsumed --
+C 24  	FreeLit		1 -- Subsumed --
+C 32  	FreeLit		1 -- Subsumed --
+C 41  	FreeLit		1 -- Subsumed --
+------------------------------------
+Before Level 5
+Var: 1		+1		
+Var: 2		+2		
+Var: 3		+3		
+Var: 4		+4		
+Var: 5		-5		
+Var: 6		-6		
+Var: 7		+7		
+Var: 8		-8		
+Var: 9		-9		
+Var: 10		-10		
+After Level 5
+Var: 1		+1		
+Var: 2		+2		
+Var: 3		+3		
+Var: 4		+4		
+Var: 5		-5		
+Var: 6		
+Var: 7		+7		
+Var: 8		
+Var: 9		-9		
+Var: 10		-10		
+Before Level 4
+Var: 1		+1		
+Var: 2		+2		
+Var: 3		+3		
+Var: 4		+4		
+Var: 5		-5		
+Var: 6		
+Var: 7		+7		
+Var: 8		
+Var: 9		-9		
+Var: 10		-10		
+After Level 4
+Var: 1		
+Var: 2		+2		
+Var: 3		+3		
+Var: 4		
+Var: 5		
+Var: 6		
+Var: 7		
+Var: 8		
+Var: 9		-9		
+Var: 10		
+Start of level 4   , already instantiated:	+3  	-9  	+2  	
+-------------------------------------
+1, 0
+Literal -1   is set at level 4, VarName: 1 
+Reason for -1   ------->   Decision or Unit clause at level 1
+------------------------------------
+C 4   	FreeLit		1
+Lit -4   is put into the resolution list
+C 9   	FreeLit		1
+Lit +6   is put into the resolution list
+C 10  	FreeLit		2
+C 11  	FreeLit		1
+Lit +6   is discard due to redundant occurrence (0)
+C 12  	FreeLit		2 -- Subsumed --
+C 15  	FreeLit		1 -- Subsumed --
+C 24  	FreeLit		2
+C 28  	FreeLit		2
+C 33  	FreeLit		1 -- Subsumed --
+C 35  	FreeLit		2 -- Subsumed --
+C 42  	FreeLit		1
+Lit -10  is put into the resolution list
+------------------------------------
+4, 1
+Literal -4   is set at level 4, VarName: 4 
+Reason for -4   ------->   C 4   :			+9  			+1  			-4  			
+------------------------------------
+C 17  	FreeLit		2
+C 26  	FreeLit		2 -- Subsumed --
+C 34  	FreeLit		2
+C 36  	FreeLit		1 -- Subsumed --
+------------------------------------
+4, 2
+Literal +6   is set at level 4, VarName: 6 
+Reason for +6   ------->   C 9   :			-3  			+1  			+6  			
+------------------------------------
+C 14  	FreeLit		2 -- Subsumed --
+C 28  	FreeLit		1
+Lit +5   is put into the resolution list
+C 34  	FreeLit		1
+Lit -10  is discard due to redundant occurrence (0)
+------------------------------------
+5, 3
+Literal -10  is set at level 4, VarName: 10 
+Reason for -10  ------->   C 42  :			+1  			-10 			+9  			
+------------------------------------
+C 10  	FreeLit		1
+Lit -7   is put into the resolution list
+C 17  	FreeLit		1
+Lit +5   is discard due to redundant occurrence (0)
+C 31  	FreeLit		2 -- Subsumed --
+C 39  	FreeLit		2
+------------------------------------
+6, 4
+Literal +5   is set at level 4, VarName: 5 
+Reason for +5   ------->   C 28  :			-6  			+5  			+1  			
+------------------------------------
+C 20  	FreeLit		1
+Lit -7   is discard due to redundant occurrence (0)
+C 30  	FreeLit		2 -- Subsumed --
+C 37  	FreeLit		2 -- Subsumed --
+C 38  	FreeLit		2 -- Subsumed --
+C 39  	FreeLit		1
+Lit -7   is discard due to redundant occurrence (0)
+C 40  	FreeLit		2
+C 41  	FreeLit		2 -- Subsumed --
+------------------------------------
+6, 5
+Literal -7   is set at level 4, VarName: 7 
+Reason for -7   ------->   C 10  :			-7  			+10 			+1  			
+------------------------------------
+C 1   	FreeLit		2 -- Subsumed --
+C 2   	FreeLit		2 -- Subsumed --
+C 16  	FreeLit		2 -- Subsumed --
+C 30  	FreeLit		1 -- Subsumed --
+C 31  	FreeLit		1 -- Subsumed --
+------------------------------------
+Before Level 4
+Var: 1		-1		
+Var: 2		+2		
+Var: 3		+3		
+Var: 4		-4		
+Var: 5		+5		
+Var: 6		+6		
+Var: 7		-7		
+Var: 8		
+Var: 9		-9		
+Var: 10		-10		
+After Level 4
+Var: 1		
+Var: 2		+2		
+Var: 3		+3		
+Var: 4		
+Var: 5		
+Var: 6		
+Var: 7		
+Var: 8		
+Var: 9		-9		
+Var: 10		
+Before Level 3
+Var: 1		
+Var: 2		+2		
+Var: 3		+3		
+Var: 4		
+Var: 5		
+Var: 6		
+Var: 7		
+Var: 8		
+Var: 9		-9		
+Var: 10		
+After Level 3
+Var: 1		
+Var: 2		
+Var: 3		+3		
+Var: 4		
+Var: 5		
+Var: 6		
+Var: 7		
+Var: 8		
+Var: 9		-9		
+Var: 10		
+Start of level 3   , already instantiated:	+3  	-9  	
+-------------------------------------
+1, 0
+Literal -2   is set at level 3, VarName: 2 
+Reason for -2   ------->   Decision or Unit clause at level 1
+------------------------------------
+C 1   	FreeLit		2
+C 3   	FreeLit		2
+C 6   	FreeLit		2 -- Subsumed --
+C 12  	FreeLit		2 -- Subsumed --
+C 14  	FreeLit		2
+C 18  	FreeLit		2 -- Subsumed --
+C 19  	FreeLit		1 -- Subsumed --
+C 26  	FreeLit		2
+C 35  	FreeLit		2
+------------------------------------
+Start of level 4   , already instantiated:	+3  	-9  	-2  	
+-------------------------------------
+1, 0
+Literal +1   is set at level 4, VarName: 1 
+Reason for +1   ------->   Decision or Unit clause at level 1
+------------------------------------
+C 3   	FreeLit		1
+Lit -7   is put into the resolution list
+C 7   	FreeLit		2 -- Subsumed --
+C 14  	FreeLit		1
+Lit -6   is put into the resolution list
+C 16  	FreeLit		2 -- Subsumed --
+C 23  	FreeLit		2
+C 25  	FreeLit		2 -- Subsumed --
+C 31  	FreeLit		2
+C 37  	FreeLit		2
+------------------------------------
+3, 1
+Literal -7   is set at level 4, VarName: 7 
+Reason for -7   ------->   C 3   :			+2  			-1  			-7  			
+------------------------------------
+C 1   	FreeLit		1
+Lit +5   is put into the resolution list
+C 2   	FreeLit		2 -- Subsumed --
+C 16  	FreeLit		1 -- Subsumed --
+C 30  	FreeLit		2
+C 31  	FreeLit		1
+Lit +10  is put into the resolution list
+------------------------------------
+5, 2
+Literal -6   is set at level 4, VarName: 6 
+Reason for -6   ------->   C 14  :			-6  			+2  			-1  			
+------------------------------------
+C 5   	FreeLit		2
+C 6   	FreeLit		1 -- Subsumed --
+C 8   	FreeLit		2 -- Subsumed --
+C 9   	FreeLit		1 -- Subsumed --
+C 11  	FreeLit		2 -- Subsumed --
+C 23  	FreeLit		1
+Lit -10  is put into the resolution list
+C 29  	FreeLit		2 -- Subsumed --
+C 37  	FreeLit		1
+Lit -5   is put into the resolution list
+C 38  	FreeLit		2
+------------------------------------
+7, 3
+Literal +5   is set at level 4, VarName: 5 
+Reason for +5   ------->   C 1   :			+7  			+5  			+2  			
+------------------------------------
+C 20  	FreeLit		1 -- Subsumed --
+C 30  	FreeLit		1
+Lit -4   is put into the resolution list
+C 37  	FreeLit		0
+~~~~~~~~~~~~~~ Conflict ~~~~~~~~~~~~~~
+C 37  :			-1  			-5  			+6  			
+-6	1	
+-2	
+5	-2	
+-7	1	Search tree pruned here.
+-2	
+1	Search tree pruned here.
+~~~~~~~~~~~~~~ Learned ~~~~~~~~~~~~~~
+C 44  :			-1  			+2  			
+Assertion Level:    3
+------------------------------------
+C 38  	FreeLit		1
+Already conflict
+C 39  	FreeLit		2 -- Subsumed --
+Already conflict
+C 40  	FreeLit		2 -- Subsumed --
+Already conflict
+C 41  	FreeLit		2
+Already conflict
+------------------------------------
+Before Level 4
+Var: 1		+1		
+Var: 2		-2		
+Var: 3		+3		
+Var: 4		
+Var: 5		+5		
+Var: 6		-6		
+Var: 7		-7		
+Var: 8		
+Var: 9		-9		
+Var: 10		
+After Level 4
+Var: 1		
+Var: 2		-2		
+Var: 3		+3		
+Var: 4		
+Var: 5		
+Var: 6		
+Var: 7		
+Var: 8		
+Var: 9		-9		
+Var: 10		
+Start of level 3   , already instantiated:	+3  	-9  	-2  	
+-------------------------------------
+1, 0
+Literal -1   is set at level 3, VarName: 1 
+Reason for -1   ------->   C 44  :			-1  			+2  			
+------------------------------------
+C 4   	FreeLit		1
+Lit -4   is put into the resolution list
+C 9   	FreeLit		1
+Lit +6   is put into the resolution list
+C 10  	FreeLit		2
+C 11  	FreeLit		2 -- Subsumed --
+C 12  	FreeLit		1 -- Subsumed --
+C 15  	FreeLit		1 -- Subsumed --
+C 24  	FreeLit		2
+C 28  	FreeLit		2
+C 33  	FreeLit		2 -- Subsumed --
+C 35  	FreeLit		1
+Lit +5   is put into the resolution list
+C 42  	FreeLit		1
+Lit -10  is put into the resolution list
+------------------------------------
+5, 1
+Literal -4   is set at level 3, VarName: 4 
+Reason for -4   ------->   C 4   :			+9  			+1  			-4  			
+------------------------------------
+C 17  	FreeLit		2
+C 26  	FreeLit		1
+Lit -7   is put into the resolution list
+C 34  	FreeLit		2
+C 36  	FreeLit		1 -- Subsumed --
+------------------------------------
+6, 2
+Literal +6   is set at level 3, VarName: 6 
+Reason for +6   ------->   C 9   :			-3  			+1  			+6  			
+------------------------------------
+C 14  	FreeLit		1 -- Subsumed --
+C 28  	FreeLit		1
+Lit +5   is discard due to redundant occurrence (0)
+C 34  	FreeLit		1
+Lit -10  is discard due to redundant occurrence (0)
+------------------------------------
+6, 3
+Literal +5   is set at level 3, VarName: 5 
+Reason for +5   ------->   C 35  :			+5  			+1  			+2  			
+------------------------------------
+C 20  	FreeLit		1
+Lit -7   is discard due to redundant occurrence (0)
+C 30  	FreeLit		2 -- Subsumed --
+C 37  	FreeLit		2 -- Subsumed --
+C 38  	FreeLit		2 -- Subsumed --
+C 39  	FreeLit		2
+C 40  	FreeLit		2
+C 41  	FreeLit		2 -- Subsumed --
+------------------------------------
+6, 4
+Literal -10  is set at level 3, VarName: 10 
+Reason for -10  ------->   C 42  :			+1  			-10 			+9  			
+------------------------------------
+C 10  	FreeLit		1
+Lit -7   is discard due to redundant occurrence (0)
+C 17  	FreeLit		1 -- Subsumed --
+C 31  	FreeLit		2 -- Subsumed --
+C 39  	FreeLit		1
+Lit -7   is discard due to redundant occurrence (0)
+------------------------------------
+6, 5
+Literal -7   is set at level 3, VarName: 7 
+Reason for -7   ------->   C 26  :			-7  			+4  			+2  			
+------------------------------------
+C 1   	FreeLit		1 -- Subsumed --
+C 2   	FreeLit		2 -- Subsumed --
+C 16  	FreeLit		2 -- Subsumed --
+C 30  	FreeLit		1 -- Subsumed --
+C 31  	FreeLit		1 -- Subsumed --
+------------------------------------
+Before Level 3
+Var: 1		-1		
+Var: 2		-2		
+Var: 3		+3		
+Var: 4		-4		
+Var: 5		+5		
+Var: 6		+6		
+Var: 7		-7		
+Var: 8		
+Var: 9		-9		
+Var: 10		-10		
+After Level 3
+Var: 1		
+Var: 2		
+Var: 3		+3		
+Var: 4		
+Var: 5		
+Var: 6		
+Var: 7		
+Var: 8		
+Var: 9		-9		
+Var: 10		
+Before Level 2
+Var: 1		
+Var: 2		
+Var: 3		+3		
+Var: 4		
+Var: 5		
+Var: 6		
+Var: 7		
+Var: 8		
+Var: 9		-9		
+Var: 10		
+After Level 2
+Var: 1		
+Var: 2		
+Var: 3		
+Var: 4		
+Var: 5		
+Var: 6		
+Var: 7		
+Var: 8		
+Var: 9		
+Var: 10		
+Start of level 2   , already instantiated:	
+-------------------------------------
+1, 0
+Literal -3   is set at level 2, VarName: 3 
+Reason for -3   ------->   Decision or Unit clause at level 1
+------------------------------------
+C 2   	FreeLit		2
+C 12  	FreeLit		2
+C 13  	FreeLit		2
+C 18  	FreeLit		2
+C 25  	FreeLit		2
+C 27  	FreeLit		2
+C 32  	FreeLit		2
+C 33  	FreeLit		2
+------------------------------------
+Start of level 3   , already instantiated:	-3  	
+-------------------------------------
+1, 0
+Literal +9   is set at level 3, VarName: 9 
+Reason for +9   ------->   Decision or Unit clause at level 1
+------------------------------------
+C 6   	FreeLit		2
+C 8   	FreeLit		2
+C 15  	FreeLit		2 -- Subsumed --
+C 16  	FreeLit		2
+C 18  	FreeLit		1
+Lit +2   is put into the resolution list
+C 19  	FreeLit		2 -- Subsumed --
+C 21  	FreeLit		2
+C 22  	FreeLit		2 -- Subsumed --
+C 29  	FreeLit		2
+C 36  	FreeLit		2 -- Subsumed --
+------------------------------------
+2, 1
+Literal +2   is set at level 3, VarName: 2 
+Reason for +2   ------->   C 18  :			-9  			+3  			+2  			
+------------------------------------
+C 7   	FreeLit		2
+C 11  	FreeLit		2
+C 13  	FreeLit		1
+Lit -10  is put into the resolution list
+C 33  	FreeLit		1
+Lit +1   is put into the resolution list
+------------------------------------
+4, 2
+Literal -10  is set at level 3, VarName: 10 
+Reason for -10  ------->   C 13  :			-10 			-2  			+3  			
+------------------------------------
+C 10  	FreeLit		2
+C 17  	FreeLit		2
+C 31  	FreeLit		2
+C 39  	FreeLit		2
+------------------------------------
+4, 3
+Literal +1   is set at level 3, VarName: 1 
+Reason for +1   ------->   C 33  :			-2  			+3  			+1  			
+------------------------------------
+C 3   	FreeLit		2 -- Subsumed --
+C 7   	FreeLit		1 -- Subsumed --
+C 14  	FreeLit		2 -- Subsumed --
+C 16  	FreeLit		1
+Lit +7   is put into the resolution list
+C 23  	FreeLit		2 -- Subsumed --
+C 25  	FreeLit		1 -- Subsumed --
+C 31  	FreeLit		1
+Lit +7   is discard due to redundant occurrence (0)
+C 37  	FreeLit		2
+------------------------------------
+5, 4
+Literal +7   is set at level 3, VarName: 7 
+Reason for +7   ------->   C 16  :			-1  			+7  			-9  			
+------------------------------------
+C 3   	FreeLit		1 -- Subsumed --
+C 10  	FreeLit		1 -- Subsumed --
+C 20  	FreeLit		2 -- Subsumed --
+C 24  	FreeLit		2 -- Subsumed --
+C 26  	FreeLit		2 -- Subsumed --
+C 27  	FreeLit		1
+Lit -8   is put into the resolution list
+C 39  	FreeLit		1
+Lit -5   is put into the resolution list
+C 40  	FreeLit		2
+------------------------------------
+7, 5
+Literal -8   is set at level 3, VarName: 8 
+Reason for -8   ------->   C 27  :			+3  			-7  			-8  			
+------------------------------------
+C 2   	FreeLit		1 -- Subsumed --
+C 21  	FreeLit		1
+Lit +5   is put into the resolution list
+C 24  	FreeLit		1 -- Subsumed --
+C 32  	FreeLit		1
+Lit -4   is put into the resolution list
+C 41  	FreeLit		2
+------------------------------------
+9, 6
+Literal -5   is set at level 3, VarName: 5 
+Reason for -5   ------->   C 39  :			+10 			-7  			-5  			
+------------------------------------
+C 1   	FreeLit		2 -- Subsumed --
+C 5   	FreeLit		2 -- Subsumed --
+C 8   	FreeLit		1
+Lit +6   is put into the resolution list
+C 17  	FreeLit		1
+Lit +4   is put into the resolution list
+C 21  	FreeLit		0
+~~~~~~~~~~~~~~ Conflict ~~~~~~~~~~~~~~
+C 21  :			+5  			-9  			+8  			
+-8	7	9	
+1	-3	
+2	-3	
+9	Search tree pruned here.
+-3	
+9	Search tree pruned here.
+-5	7	Search tree pruned here.
+-10	-3	
+2	Search tree pruned here.
+~~~~~~~~~~~~~~ Learned ~~~~~~~~~~~~~~
+C 45  :			-9  			+3  			
+Assertion Level:    2
+------------------------------------
+C 28  	FreeLit		2 -- Subsumed --
+Already conflict
+C 29  	FreeLit		1
+Already conflict
+C 35  	FreeLit		2 -- Subsumed --
+Already conflict
+------------------------------------
+Before Level 3
+Var: 4297072144		+1		
+Var: 2		+2		
+Var: 3		-3		
+Var: 4		
+Var: 5		-5		
+Var: 6		
+Var: 7		+7		
+Var: 8		-8		
+Var: 9		+9		
+Var: 10		-10		
+After Level 3
+Var: 4297072144		
+Var: 2		
+Var: 3		-3		
+Var: 4		
+Var: 5		
+Var: 6		
+Var: 7		
+Var: 8		
+Var: 9		
+Var: 10		
+Start of level 2   , already instantiated:	-3  	
+-------------------------------------
+1, 0
+Literal -9   is set at level 2, VarName: 9 
+Reason for -9   ------->   C 45  :			-9  			+3  			
+------------------------------------
+C 4   	FreeLit		2
+C 42  	FreeLit		2
+------------------------------------
+Start of level 3   , already instantiated:	-3  	-9  	
+-------------------------------------
+1, 0
+Literal +2   is set at level 3, VarName: 2 
+Reason for +2   ------->   Decision or Unit clause at level 1
+------------------------------------
+C 7   	FreeLit		2
+C 11  	FreeLit		2
+C 13  	FreeLit		1
+Lit -10  is put into the resolution list
+C 33  	FreeLit		1
+Lit +1   is put into the resolution list
+------------------------------------
+3, 1
+Literal -10  is set at level 3, VarName: 10 
+Reason for -10  ------->   C 13  :			-10 			-2  			+3  			
+------------------------------------
+C 10  	FreeLit		2
+C 17  	FreeLit		2
+C 31  	FreeLit		2
+C 39  	FreeLit		2
+------------------------------------
+3, 2
+Literal +1   is set at level 3, VarName: 4297072144 
+Reason for +1   ------->   C 33  :			-2  			+3  			+1  			
+------------------------------------
+C 3   	FreeLit		2 -- Subsumed --
+C 7   	FreeLit		1 -- Subsumed --
+C 14  	FreeLit		2 -- Subsumed --
+C 16  	FreeLit		2 -- Subsumed --
+C 23  	FreeLit		2 -- Subsumed --
+C 25  	FreeLit		1 -- Subsumed --
+C 31  	FreeLit		1
+Lit +7   is put into the resolution list
+C 37  	FreeLit		2
+------------------------------------
+4, 3
+Literal +7   is set at level 3, VarName: 7 
+Reason for +7   ------->   C 31  :			+7  			+10 			-1  			
+------------------------------------
+C 3   	FreeLit		1 -- Subsumed --
+C 10  	FreeLit		1 -- Subsumed --
+C 20  	FreeLit		2 -- Subsumed --
+C 24  	FreeLit		2 -- Subsumed --
+C 26  	FreeLit		2 -- Subsumed --
+C 27  	FreeLit		1
+Lit -8   is put into the resolution list
+C 39  	FreeLit		1
+Lit -5   is put into the resolution list
+C 40  	FreeLit		2
+------------------------------------
+6, 4
+Literal -8   is set at level 3, VarName: 8 
+Reason for -8   ------->   C 27  :			+3  			-7  			-8  			
+------------------------------------
+C 2   	FreeLit		1 -- Subsumed --
+C 21  	FreeLit		2 -- Subsumed --
+C 24  	FreeLit		1 -- Subsumed --
+C 32  	FreeLit		1
+Lit -4   is put into the resolution list
+C 41  	FreeLit		2
+------------------------------------
+7, 5
+Literal -5   is set at level 3, VarName: 5 
+Reason for -5   ------->   C 39  :			+10 			-7  			-5  			
+------------------------------------
+C 1   	FreeLit		2 -- Subsumed --
+C 5   	FreeLit		2 -- Subsumed --
+C 8   	FreeLit		2 -- Subsumed --
+C 17  	FreeLit		1
+Lit +4   is put into the resolution list
+C 21  	FreeLit		1 -- Subsumed --
+C 28  	FreeLit		2 -- Subsumed --
+C 29  	FreeLit		2 -- Subsumed --
+C 35  	FreeLit		2 -- Subsumed --
+------------------------------------
+8, 6
+Literal -4   is set at level 3, VarName: 4 
+Reason for -4   ------->   C 32  :			+8  			-4  			+3  			
+------------------------------------
+C 17  	FreeLit		0
+~~~~~~~~~~~~~~ Conflict ~~~~~~~~~~~~~~
+C 17  :			+5  			+10 			+4  			
+-4	-3	
+-8	7	1	-3	
+2	
+-10	-3	
+2	Search tree pruned here.
+-3	
+-10	Search tree pruned here.
+-5	7	Search tree pruned here.
+-10	Search tree pruned here.
+~~~~~~~~~~~~~~ Learned ~~~~~~~~~~~~~~
+C 46  :			+3  			-2  			
+Assertion Level:    2
+------------------------------------
+C 26  	FreeLit		1 -- Subsumed --
+Already conflict
+C 34  	FreeLit		2 -- Subsumed --
+Already conflict
+C 36  	FreeLit		2 -- Subsumed --
+Already conflict
+------------------------------------
+Before Level 3
+Var: 4297072144		+1		
+Var: 2		+2		
+Var: 3		-3		
+Var: 4		-4		
+Var: 5		-5		
+Var: 6		
+Var: 7		+7		
+Var: 8		-8		
+Var: 9		-9		
+Var: 10		-10		
+After Level 3
+Var: 4297072144		
+Var: 2		
+Var: 3		-3		
+Var: 4		
+Var: 5		
+Var: 6		
+Var: 7		
+Var: 8		
+Var: 9		-9		
+Var: 10		
+Start of level 2   , already instantiated:	-3  	-9  	
+-------------------------------------
+1, 0
+Literal -2   is set at level 2, VarName: 2 
+Reason for -2   ------->   C 46  :			+3  			-2  			
+------------------------------------
+C 1   	FreeLit		2
+C 3   	FreeLit		2
+C 6   	FreeLit		2 -- Subsumed --
+C 12  	FreeLit		1
+Lit +1   is put into the resolution list
+C 14  	FreeLit		2
+C 18  	FreeLit		1 -- Subsumed --
+C 19  	FreeLit		2 -- Subsumed --
+C 26  	FreeLit		2
+C 35  	FreeLit		2
+------------------------------------
+2, 1
+Literal +1   is set at level 2, VarName: 4297072144 
+Reason for +1   ------->   C 12  :			+2  			+3  			+1  			
+------------------------------------
+C 3   	FreeLit		1
+Lit -7   is put into the resolution list
+C 7   	FreeLit		2 -- Subsumed --
+C 14  	FreeLit		1
+Lit -6   is put into the resolution list
+C 16  	FreeLit		2 -- Subsumed --
+C 23  	FreeLit		2
+C 25  	FreeLit		1
+Lit -10  is put into the resolution list
+C 31  	FreeLit		2
+C 37  	FreeLit		2
+------------------------------------
+5, 2
+Literal -7   is set at level 2, VarName: 7 
+Reason for -7   ------->   C 3   :			+2  			-1  			-7  			
+------------------------------------
+C 1   	FreeLit		1
+Lit +5   is put into the resolution list
+C 2   	FreeLit		1
+Lit +8   is put into the resolution list
+C 16  	FreeLit		1 -- Subsumed --
+C 30  	FreeLit		2
+C 31  	FreeLit		1
+Lit +10  is put into the resolution list
+------------------------------------
+8, 3
+Literal -6   is set at level 2, VarName: 6 
+Reason for -6   ------->   C 14  :			-6  			+2  			-1  			
+------------------------------------
+C 5   	FreeLit		2
+C 6   	FreeLit		1 -- Subsumed --
+C 8   	FreeLit		2 -- Subsumed --
+C 9   	FreeLit		2 -- Subsumed --
+C 11  	FreeLit		2 -- Subsumed --
+C 23  	FreeLit		1
+Lit -10  is discard due to redundant occurrence (0)
+C 29  	FreeLit		2 -- Subsumed --
+C 37  	FreeLit		1
+Lit -5   is put into the resolution list
+C 38  	FreeLit		2
+------------------------------------
+9, 4
+Literal -10  is set at level 2, VarName: 10 
+Reason for -10  ------->   C 25  :			-1  			-10 			+3  			
+------------------------------------
+C 10  	FreeLit		2 -- Subsumed --
+C 17  	FreeLit		2
+C 31  	FreeLit		0
+~~~~~~~~~~~~~~ Conflict ~~~~~~~~~~~~~~
+C 31  :			+7  			+10 			-1  			
+1	-3	
+-2	-3	Search tree pruned here.
+-10	-3	Search tree pruned here.
+1	Search tree pruned here.
+-7	1	Search tree pruned here.
+-2	Search tree pruned here.
+~~~~~~~~~~~~~~ Learned ~~~~~~~~~~~~~~
+C 47  :			+3  			
+Assertion Level:    1
+------------------------------------
+C 39  	FreeLit		2 -- Subsumed --
+Already conflict
+------------------------------------
+Before Level 2
+Var: 4297072144		+1		
+Var: 2		-2		
+Var: 3		-3		
+Var: 4		
+Var: 5		
+Var: 6		-6		
+Var: 7		-7		
+Var: 8		
+Var: 9		-9		
+Var: 10		-10		
+After Level 2
+Var: 4297072144		
+Var: 2		
+Var: 3		
+Var: 4		
+Var: 5		
+Var: 6		
+Var: 7		
+Var: 8		
+Var: 9		
+Var: 10		
+Start of level 1   , already instantiated:	
+-------------------------------------
+1, 0
+Literal +3   is set at level 1, VarName: 3 
+Reason for +3   ------->   C 47  :			+3  			
+------------------------------------
+C 9   	FreeLit		2
+C 15  	FreeLit		2
+C 19  	FreeLit		2
+C 20  	FreeLit		2
+C 22  	FreeLit		2
+C 36  	FreeLit		2
+------------------------------------
+Start of level 2   , already instantiated:	+3  	
+-------------------------------------
+1, 0
+Literal +9   is set at level 2, VarName: 9 
+Reason for +9   ------->   Decision or Unit clause at level 1
+------------------------------------
+C 6   	FreeLit		2
+C 8   	FreeLit		2
+C 15  	FreeLit		1
+Lit +1   is put into the resolution list
+C 16  	FreeLit		2
+C 18  	FreeLit		2 -- Subsumed --
+C 19  	FreeLit		1
+Lit +2   is put into the resolution list
+C 21  	FreeLit		2
+C 22  	FreeLit		1
+Lit -8   is put into the resolution list
+C 29  	FreeLit		2
+C 36  	FreeLit		1
+Lit +4   is put into the resolution list
+------------------------------------
+5, 1
+Literal +1   is set at level 2, VarName: 4297072144 
+Reason for +1   ------->   C 15  :			-3  			-9  			+1  			
+------------------------------------
+C 3   	FreeLit		2
+C 7   	FreeLit		2
+C 14  	FreeLit		2
+C 16  	FreeLit		1
+Lit +7   is put into the resolution list
+C 23  	FreeLit		2
+C 25  	FreeLit		2 -- Subsumed --
+C 31  	FreeLit		2
+C 37  	FreeLit		2
+------------------------------------
+6, 2
+Literal +2   is set at level 2, VarName: 2 
+Reason for +2   ------->   C 19  :			-9  			-3  			+2  			
+------------------------------------
+C 7   	FreeLit		1
+Lit -10  is put into the resolution list
+C 11  	FreeLit		2 -- Subsumed --
+C 13  	FreeLit		2 -- Subsumed --
+C 33  	FreeLit		2 -- Subsumed --
+------------------------------------
+7, 3
+Literal -8   is set at level 2, VarName: 8 
+Reason for -8   ------->   C 22  :			-3  			-8  			-9  			
+------------------------------------
+C 2   	FreeLit		2 -- Subsumed --
+C 21  	FreeLit		1
+Lit +5   is put into the resolution list
+C 24  	FreeLit		2 -- Subsumed --
+C 32  	FreeLit		2 -- Subsumed --
+C 41  	FreeLit		2
+------------------------------------
+8, 4
+Literal +4   is set at level 2, VarName: 4 
+Reason for +4   ------->   C 36  :			-3  			+4  			-9  			
+------------------------------------
+C 4   	FreeLit		2 -- Subsumed --
+C 30  	FreeLit		2
+C 32  	FreeLit		1 -- Subsumed --
+C 41  	FreeLit		1
+Lit -5   is put into the resolution list
+------------------------------------
+9, 5
+Literal +7   is set at level 2, VarName: 7 
+Reason for +7   ------->   C 16  :			-1  			+7  			-9  			
+------------------------------------
+C 3   	FreeLit		1 -- Subsumed --
+C 10  	FreeLit		2 -- Subsumed --
+C 20  	FreeLit		1
+Lit -5   is discard due to redundant occurrence (0)
+C 24  	FreeLit		1 -- Subsumed --
+C 26  	FreeLit		2 -- Subsumed --
+C 27  	FreeLit		2 -- Subsumed --
+C 39  	FreeLit		2
+C 40  	FreeLit		2 -- Subsumed --
+------------------------------------
+9, 6
+Literal -10  is set at level 2, VarName: 10 
+Reason for -10  ------->   C 7   :			-2  			-10 			-1  			
+------------------------------------
+C 10  	FreeLit		1 -- Subsumed --
+C 17  	FreeLit		2 -- Subsumed --
+C 31  	FreeLit		1 -- Subsumed --
+C 39  	FreeLit		1
+Lit -5   is discard due to redundant occurrence (0)
+------------------------------------
+9, 7
+Literal +5   is set at level 2, VarName: 5 
+Reason for +5   ------->   C 21  :			+5  			-9  			+8  			
+------------------------------------
+C 20  	FreeLit		0
+~~~~~~~~~~~~~~ Conflict ~~~~~~~~~~~~~~
+C 20  :			-7  			-5  			-3  			
+3	
+5	-8	9	
+3	
+9	Search tree pruned here.
+7	9	Search tree pruned here.
+1	9	Search tree pruned here.
+3	
+~~~~~~~~~~~~~~ Learned ~~~~~~~~~~~~~~
+C 48  :			-3  			-9  			
+Assertion Level:    1
+------------------------------------
+C 30  	FreeLit		1 -- Subsumed --
+Already conflict
+C 37  	FreeLit		1
+Already conflict
+C 38  	FreeLit		2 -- Subsumed --
+Already conflict
+C 39  	FreeLit		0
+Already conflict
+C 40  	FreeLit		1 -- Subsumed --
+Already conflict
+C 41  	FreeLit		0
+Already conflict
+------------------------------------
+Before Level 2
+Var: 4297072144		+1		
+Var: 2		+2		
+Var: 3		+3		
+Var: 4		+4		
+Var: 5		+5		
+Var: 6		
+Var: 7		+7		
+Var: 8		-8		
+Var: 9		+9		
+Var: 10		-10		
+After Level 2
+Var: 4297072144		
+Var: 2		
+Var: 3		+3		
+Var: 4		
+Var: 5		
+Var: 6		
+Var: 7		
+Var: 8		
+Var: 9		
+Var: 10		
+Start of level 1   , already instantiated:	+3  	
+-------------------------------------
+1, 0
+Literal -9   is set at level 1, VarName: 9 
+Reason for -9   ------->   C 48  :			-3  			-9  			
+------------------------------------
+C 4   	FreeLit		2
+C 42  	FreeLit		2
+------------------------------------
+Start of level 2   , already instantiated:	+3  	-9  	
+-------------------------------------
+1, 0
+Literal +2   is set at level 2, VarName: 2 
+Reason for +2   ------->   Decision or Unit clause at level 1
+------------------------------------
+C 7   	FreeLit		2
+C 11  	FreeLit		2
+C 13  	FreeLit		2 -- Subsumed --
+C 33  	FreeLit		2 -- Subsumed --
+------------------------------------
+Before Level 2
+Var: 4297072144		
+Var: 2		+2		
+Var: 3		+3		
+Var: 4		
+Var: 5		
+Var: 6		
+Var: 7		
+Var: 8		
+Var: 9		-9		
+Var: 10		
+After Level 2
+Var: 4297072144		
+Var: 2		
+Var: 3		+3		
+Var: 4		
+Var: 5		
+Var: 6		
+Var: 7		
+Var: 8		
+Var: 9		-9		
+Var: 10		
+Start of level 2   , already instantiated:	+3  	-9  	
+-------------------------------------
+1, 0
+Literal -2   is set at level 2, VarName: 2 
+Reason for -2   ------->   Decision or Unit clause at level 1
+------------------------------------
+C 1   	FreeLit		2
+C 3   	FreeLit		2
+C 6   	FreeLit		2 -- Subsumed --
+C 12  	FreeLit		2 -- Subsumed --
+C 14  	FreeLit		2
+C 18  	FreeLit		2 -- Subsumed --
+C 19  	FreeLit		1 -- Subsumed --
+C 26  	FreeLit		2
+C 35  	FreeLit		2
+------------------------------------
+Start of level 3   , already instantiated:	+3  	-9  	-2  	
+-------------------------------------
+1, 0
+Literal +1   is set at level 3, VarName: 4297072144 
+Reason for +1   ------->   Decision or Unit clause at level 1
+------------------------------------
+C 3   	FreeLit		1
+Lit -7   is put into the resolution list
+C 7   	FreeLit		2 -- Subsumed --
+C 14  	FreeLit		1
+Lit -6   is put into the resolution list
+C 16  	FreeLit		2 -- Subsumed --
+C 23  	FreeLit		2
+C 25  	FreeLit		2 -- Subsumed --
+C 31  	FreeLit		2
+C 37  	FreeLit		2
+------------------------------------
+3, 1
+Literal -7   is set at level 3, VarName: 7 
+Reason for -7   ------->   C 3   :			+2  			-1  			-7  			
+------------------------------------
+C 1   	FreeLit		1
+Lit +5   is put into the resolution list
+C 2   	FreeLit		2 -- Subsumed --
+C 16  	FreeLit		1 -- Subsumed --
+C 30  	FreeLit		2
+C 31  	FreeLit		1
+Lit +10  is put into the resolution list
+------------------------------------
+5, 2
+Literal -6   is set at level 3, VarName: 6 
+Reason for -6   ------->   C 14  :			-6  			+2  			-1  			
+------------------------------------
+C 5   	FreeLit		2
+C 6   	FreeLit		1 -- Subsumed --
+C 8   	FreeLit		2 -- Subsumed --
+C 9   	FreeLit		1 -- Subsumed --
+C 11  	FreeLit		2 -- Subsumed --
+C 23  	FreeLit		1
+Lit -10  is put into the resolution list
+C 29  	FreeLit		2 -- Subsumed --
+C 37  	FreeLit		1
+Lit -5   is put into the resolution list
+C 38  	FreeLit		2
+------------------------------------
+7, 3
+Literal +5   is set at level 3, VarName: 5 
+Reason for +5   ------->   C 1   :			+7  			+5  			+2  			
+------------------------------------
+C 20  	FreeLit		1 -- Subsumed --
+C 30  	FreeLit		1
+Lit -4   is put into the resolution list
+C 37  	FreeLit		0
+~~~~~~~~~~~~~~ Conflict ~~~~~~~~~~~~~~
+C 37  :			-1  			-5  			+6  			
+-6	1	
+-2	
+5	-2	
+-7	1	Search tree pruned here.
+-2	
+1	Search tree pruned here.
+~~~~~~~~~~~~~~ Learned ~~~~~~~~~~~~~~
+C 49  :			-1  			+2  			
+Assertion Level:    2
+------------------------------------
+C 38  	FreeLit		1
+Already conflict
+C 39  	FreeLit		2 -- Subsumed --
+Already conflict
+C 40  	FreeLit		2 -- Subsumed --
+Already conflict
+C 41  	FreeLit		2
+Already conflict
+------------------------------------
+Before Level 3
+Var: 4297072144		+1		
+Var: 2		-2		
+Var: 3		+3		
+Var: 4		
+Var: 5		+5		
+Var: 6		-6		
+Var: 7		-7		
+Var: 8		
+Var: 9		-9		
+Var: 10		
+After Level 3
+Var: 4297072144		
+Var: 2		-2		
+Var: 3		+3		

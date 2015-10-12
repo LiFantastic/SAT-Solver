@@ -1,0 +1,78 @@
+Result from my own executable file:
+
+
+Constructing CNF... DONE
+CNF stats: 
+  Vars=1236 / Clauses=11416
+  CNF Time	0.006s
+Constructing vtree (from primal graph)... DONE
+Vtree stats:
+  Vtree widths: con<=38, c_con=10800 v_con=38
+  Vtree Time	5.909s
+Compiling... DONE
+  NNF memory      	23.0 MB
+  Learned clauses      	0
+Cache stats:
+  hit rate   	96.4%
+  lookups    	605802
+  ent count  	21824
+  ent memory 	27.0 MB
+  ht  memory 	152.6 MB
+  clists     	1.0 ave, 2 max
+  keys       	1248.5b ave, 1575.0b max, 3.0b min
+  Compile Time	8.387s
+Saving compiled NNF to file... DONE
+  Save Time       	0.292s
+NNF stats:
+  Nodes           	504446
+  Edges           	1003948
+Post compilation
+  Loading NNF from file... DONE
+  Load Time       	0.337s
+NNF stats:
+  Nodes           	504446
+  Edges           	1003948
+  Counting... 18739277038847939886754019920358123424308469030992781557966909983211910963157763678726120154469030856807730587971859910379069462105489708001873004723798633342340521799560185957916958401869207109443355859123561156747098129524433371596461424856004227854241384374972430825095073282950873641 models / 0.480s
+  Checking decomposability... OK / 0.200s
+  Checking entailment... OK / 84.266s
+Total Time: 99.949s
+
+Result from provided executable file:
+
+
+Constructing CNF... DONE
+CNF stats: 
+  Vars=1236 / Clauses=11416
+  CNF Time	0.012s
+Constructing vtree (from primal graph)... DONE
+Vtree stats:
+  Vtree widths: con<=38, c_con=10800 v_con=38
+  Vtree Time	5.957s
+Compiling... DONE
+  NNF memory      	22.7 MB
+  Learned clauses      	0
+Cache stats:
+  hit rate   	96.3%
+  lookups    	601849
+  ent count  	22375
+  ent memory 	27.1 MB
+  ht  memory 	152.6 MB
+  clists     	1.0 ave, 2 max
+  keys       	1221.3b ave, 1575.0b max, 3.0b min
+  Compile Time	9.830s
+Saving compiled NNF to file... DONE
+  Save Time       	0.287s
+NNF stats:
+  Nodes           	497796
+  Edges           	990648
+Post compilation
+  Loading NNF from file... DONE
+  Load Time       	0.329s
+NNF stats:
+  Nodes           	497796
+  Edges           	990648
+  Counting... 18739277038847939886754019920358123424308469030992781557966909983211910963157763678726120154469030856807730587971859910379069462105489708001873004723798633342340521799560185957916958401869207109443355859123561156747098129524433371596461424856004227854241384374972430825095073282950873641 models / 0.468s
+  Checking decomposability... OK / 0.193s
+  Checking entailment... OK / 79.810s
+Total Time: 96.954s
+
